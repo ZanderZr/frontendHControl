@@ -1,0 +1,62 @@
+<app-page>
+  <div class="bloque-login col-lg-4 offset-lg-4" *ngIf="isLoginPage">
+    <div class="card text-white bg-success mb-3" style="max-width: 30rem">
+      <div class="card-header text-center">Login</div>
+      <div class="card-body">
+        <form [formGroup]="formLogin">
+          <label for="exampleInputEmail1" class="form-label mt-4">Email</label>
+          <input formControlName="email" type="text" class="form-control" placeholder="Introduce tu email" />
+          <label for="exampleInputEmail1" class="form-label mt-4">Password</label>
+          <input formControlName="password" type="password" class="form-control" placeholder="Introduce tu contraseña" />
+          <div class="form-check mt-6">
+            <input type="checkbox" id="rememberMe" class="form-check-input" formControlName="rememberMe" />
+            <label for="rememberMe" class="form-check-label">Mantener sesión iniciada</label>
+          </div>
+        </form>
+        <div class="buttons-container mt-4 text-center">
+          <button type="button" class="auth-button" (click)="toggleForm()">
+            Registrarme
+          </button>
+          <button type="button" class="login-button" (click)="login()">
+            LOGIN
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="bloque-register col-lg-4 offset-lg-4" *ngIf="!isLoginPage">
+    <div class="card text-white bg-warning mb-3" style="max-width: 30rem">
+      <div class="card-header text-center">REGISTRO</div>
+      <div class="card-body">
+        <form [formGroup]="formRegister">
+          <label for="exampleInputEmail1" class="form-label">Usuario</label>
+          <input formControlName="username" type="text" class="form-control"
+            placeholder="Introduce un nombre de usuario" />
+          <label for="exampleInputEmail1" class="form-label">Email</label>
+          <input formControlName="email" type="email" class="form-control" placeholder="Introduce un email" />
+          <label for="exampleInputEmail1" class="form-label">Contraseña</label>
+          <input formControlName="password1" type="password" class="form-control"
+            placeholder="Introduce una contraseña" />
+          <label for="exampleInputEmail1" class="form-label">Confirmar contraseña</label>
+          <input formControlName="password2" type="password" class="form-control"
+            placeholder="Confirma la contraseña" />
+            <label for="role" class="form-label">Rol</label>
+        <select formControlName="role" class="form-control">
+          <option *ngFor="let role of roles" [value]="role">{{ role}}</option>
+        </select>
+        </form>
+        <div class="buttons-container">
+          <button type="submit" class="auth-button" (click)="toggleForm()">
+            Autentificarme
+          </button>
+          <button type="button" class="register-button" (click)="register()">
+            Registrar
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</app-page>

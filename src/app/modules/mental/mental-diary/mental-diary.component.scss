@@ -1,0 +1,82 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+  padding: 15px;
+  border-bottom: 2px solid #ddd;
+
+  .header-text {
+    display: flex;
+    flex-direction: column; // Los textos estarán apilados verticalmente
+    align-items: flex-start; // Alinea a la izquierda los textos
+  }
+
+  .day {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .date {
+    margin-top: 5px;
+    font-size: 1rem;
+    color: #666;
+  }
+
+  i {
+    color: #ffffff;
+    font-size: 1.5rem;
+  }
+}
+input{
+  border:none;
+
+}
+
+.content-diary {
+  flex: 1;
+  padding: 15px 0 15px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.diary-entry {
+  width: 100%;
+  height: calc(100vh - 270px);
+  padding: 15px;
+  font-size: 1rem;
+  line-height: 1.5;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  resize: none;
+}
+
+.diary-entry:focus {
+  outline: none;
+  border-color: #003d47;
+  box-shadow: 0 0 5px #003d47;
+}
+
+.calendar-button{
+  padding:8px;
+  background-color: #003d47;
+  border-radius: 4px;
+  border: none;
+
+  &:active {
+    background-color: #047b8d;
+  }
+}
+
+.datepicker{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  
+  input{
+    max-width: 80px;
+  }
+}
+
+

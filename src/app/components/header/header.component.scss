@@ -1,0 +1,62 @@
+header {
+  height: 50px; /* Escritorio */
+  width: 100vw;
+  display: flex;
+  z-index: 1000;
+  background-color: white;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed; /* Para posicionar el pseudo-elemento */
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* Define el grosor, el estilo y el color del borde */
+}
+
+.user-img-container{
+  min-width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.5); /* Define el grosor, el estilo y el color del borde */
+  box-sizing: border-box;
+  margin-right: 4%;
+}
+
+.user-img {
+  width: 100%; /* La imagen ocupará el 100% del ancho del contenedor */
+  height: 100%; /* La imagen ocupará el 100% de la altura del contenedor */
+  border-radius: 50%;
+
+  object-fit: cover; /* Mantiene la relación de aspecto y recorta la imagen si es necesario */
+}
+
+i{
+  width: auto;  /* Mantén el aspecto del icono */
+  font-size: 150%;
+  padding-left: 4%;
+  padding-right: 4%;
+}
+
+.fa-solid{
+  font-size: 100%;
+
+}
+.active-bell {
+  color: red; /* Si la variable es true */
+}
+
+.inactive-bell {
+  color: gray; /* Si la variable es false */
+}
+button{
+  background-color: transparent;
+  border:none;
+  margin-left: 4%;
+}
+
+.user-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap:10px;
+  margin-right: 4%;
+}

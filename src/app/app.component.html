@@ -1,0 +1,3 @@
+<app-header *ngIf="!isProtectedRoute()"></app-header>
+<router-outlet></router-outlet>
+<app-footer *ngIf="!isProtectedRoute()"></app-footer>

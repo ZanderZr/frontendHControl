@@ -1,0 +1,24 @@
+@import 'ngx-toastr/toastr';
+
+/* src/styles.css o src/styles.scss */
+
+
+@keyframes slideDown {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(100vh); /* Ajusta el valor según tus necesidades */
+  }
+}
+
+/* Clases para controlar el estado de la animación */
+.slide-down {
+  animation: slideDown 500ms forwards;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
