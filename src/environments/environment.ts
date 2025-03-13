@@ -4,8 +4,8 @@
 
 export const environment = {
   production: false,
-  apiUrl: 'http://localhost:3000/api',
-  apiUrlBase:'ws://localhost:3000',
+  apiUrl: 'https://backendhcontrol-production.up.railway.app/api',
+  apiUrlBase:'wss://backendhcontrol-production.up.railway.app/',
   firebase: {
     apiKey: "AIzaSyCMh3oAa4J1wqWPEASL0SB2l-l21JBtGJ0",
     authDomain: "hcontrol-90101.firebaseapp.com",

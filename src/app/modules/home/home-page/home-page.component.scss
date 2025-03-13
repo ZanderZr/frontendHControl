@@ -12,14 +12,17 @@
   transition: transform 0.2s ease-in-out;
   margin-bottom: 50px;
 }
+
 .bubble-form:hover {
   transform: translateX(-50%) scale(1.03);
 }
+
 .bubble-form form {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
+
 .bubble-form input,
 .bubble-form textarea {
   width: 95%;
@@ -30,10 +33,12 @@
   outline: none;
   transition: border-color 0.2s;
 }
+
 .bubble-form input:focus,
 .bubble-form textarea:focus {
   border-color: #1565c0;
 }
+
 .bubble-form button {
   background-color: #1565c0;
   color: white;
@@ -44,9 +49,11 @@
   cursor: pointer;
   transition: background-color 0.2s;
 }
+
 .bubble-form button:hover {
   background-color: #218838;
 }
+
 .board {
   display: flex;
   flex-wrap: wrap;
