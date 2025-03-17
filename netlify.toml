@@ -1,2 +1,9 @@
 [build]
-node_version = "18"  # O la versión que necesitas
+    node_version = "18"  # O la versión que necesitas
+    command = "ng build --configuration=production"
+    publish = "dist/hcontrol/browser"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
